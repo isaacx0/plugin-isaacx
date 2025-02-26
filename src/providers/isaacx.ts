@@ -1,13 +1,5 @@
 import type { IAgentRuntime, Provider, Memory, State } from "@elizaos/core";
-
-interface IsaacXResponse {
-    answer: string;
-    references: string[];
-}
-
-interface IsaacXProviderOptions {
-    apiUrl: string;
-}
+import type { IsaacXProviderOptions, IsaacXResponse } from "../types";
 
 const DEFAULT_ISAACX_CONFIG: IsaacXProviderOptions = {
     apiUrl: "https://api.isaacx.ai",

@@ -12,10 +12,7 @@ import {
     State,
 } from "@elizaos/core";
 import { IsaacXProvider } from "../providers/isaacx";
-
-export interface ResearchQuestionContent extends Content {
-    question: string;
-}
+import { ResearchQuestionContent } from "../types";
 
 function isResearchQuestionContent(
     _runtime: IAgentRuntime,
