@@ -18,7 +18,7 @@ describe('IsaacX Plugin', () => {
 
     it('should have ASK_RESEARCH_QUESTION action with correct properties', () => {
         const action = isaacXPlugin.actions[0];
-        expect(action.name).toBe('ASK_RESEARCH_QUESTION');
+        expect(action.name).toBe('ANSWER_RESEARCH_QUESTION');
         expect(action.description).toBeDefined();
         expect(action.similes).toBeInstanceOf(Array);
         expect(action.handler).toBeInstanceOf(Function);
@@ -30,7 +30,7 @@ describe('IsaacX Plugin', () => {
             const provider = new IsaacXProvider(mockRuntime as any);
             
             await expect(provider.initialize(mockRuntime as any))
-                .rejects.toThrow('ISAACX_API_KEY not configured');
+                .rejects.toThrow('ISAACX_API_KEY is not configured');
         });
 
         it('should initialize with valid API key', async () => {
