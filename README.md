@@ -1,3 +1,5 @@
+<img src="./assets/banner.png" alt="Isaac X Plugin Banner" width="1280" height="320" />
+
 # Isaac X Plugin for ElizaOS
 
 This plugin provides integration with the Isaac X API, enabling ElizaOS Agents to reason scientifically using the latest academic research.
